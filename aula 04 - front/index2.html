@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Detalhes do Evento</h1>
+        <button onclick="voltar()">← Voltar</button>
+    </header>
+
+    <main>
+        <section id="detalhesEvento">
+            <h2 id="tituloEvento"></h2>
+            <p><strong>Data:</strong> <span id="dataEvento"></span></p>
+            <p><strong>Local:</strong> <span id="localEvento"></span></p>
+            <p><strong>Descrição:</strong></p>
+            <p id="descricaoEvento"></p>
+        </section>
+
+        <section id="uploadImagem">
+            <h3>Adicionar Imagem</h3>
+            <input type="file" id="inputImagem" accept="image/*">
+            <button onclick="uploadImagem()">Enviar</button>
+        </section>
+
+        <section id="galeria">
+            <h3>Galeria de Imagens</h3>
+            <div id="listaImagens"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
